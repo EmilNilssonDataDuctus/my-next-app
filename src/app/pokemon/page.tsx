@@ -17,7 +17,7 @@ export default async function About() {
     <main>
       <h1>Hello world</h1>
       {data.results.map((pokemon: pokemonType) => (
-        <p>{pokemon.name}</p>
+        <p key={pokemon.name}>{pokemon.name}</p>
       ))}
     </main>
   );
